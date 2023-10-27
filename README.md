@@ -1,50 +1,50 @@
 <h1>iOS Packet Capture</h1>
 
 <h2>Description</h2>
-This project provides a walkthrough on how to capture and analyze network traffic on ios devices with wireshark using Xcode. Xcode is a software development tool built by Apple inc for apple devices, the Xcode application allows us to run the Remote virtual interface tool(rvictl) command which allows us to create an interface that allows us to capture the network traffic from the iOS device on wireshark. It is important to acquire the UDID of the device to be captured as it will be used in terminal to run the command.
+This project provides a walkthrough on how to capture and analyze network traffic on ios devices with wireshark using Xcode. Xcode is a software development tool built by Apple inc for apple devices, the Xcode application allows us to run the Remote virtual interface tool(rvictl) command which allows us to create an interface that allows us to capture and analyze the network traffic from the iOS device on wireshark. Capturing live packets from these devices can aid digital forensics, investigate security threats and also aid network troubleshooting. It is important to acquire the UDID of the device to be captured as it will be used in terminal to run the command required to create the network interface.
 <br />
 
 
 <h2>Utilities Used</h2>
 
 - <b>Xcode</b> 
-- <b>Wireshark</b>
-- <B>Terminal</b>
+- <b>Terminal</b>
+- <B>Wireshark</b>
 
 <h2>Environments Used </h2>
 
 - <b>MacOS Sonoma</b>
 - <b>iOS 17.0.3
 
-<h2>Program walk-through:</h2>
+<h2>Project walk-through:</h2>
 
 <p align="center">
 Go to the app store and download Xcode: <br/>
-<img src="https://imgur.com/bVxbMpo.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/bVxbMpo.png" height="80%" width="80%" alt="iOS Packet Capture"/>
 <br />
 <br />
 Plug in the device with a usb and allow trust, open xcode and click on the windows menu > device and simulators > connected devices then copy the identifier(UDID):  <br/>
-<img src="https://imgur.com/u7c7U2I.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/u7c7U2I.png" height="80%" width="80%" alt="iOS Packet Capture"/>
 <br />
 <br />
 Open terminal and run the command "ifconfig -l" to check the preexisting network interfaces: <br/>
-<img src="https://imgur.com/atETaiH.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/atETaiH.png" height="80%" width="80%" alt="iOS Packet Capture"/>
 <br />
 <br />
-Confirm your selection:  <br/>
-<img src="https://i.imgur.com/cdFHBiU.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Run the command "rvictl -s UDID", this allows us to create the network interface to analyze and capture the iOS device packets:  <br/>
+<img src="https://imgur.com/PeDA4QL.png" height="80%" width="80%" alt="iOS Packet Capture"/>
 <br />
 <br />
-Wait for process to complete (may take some time):  <br/>
-<img src="https://i.imgur.com/JL945Ga.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Run the command "ifconfig -l" to confirm the interface has been added, observe below that the interface "rvi0" has been added:  <br/>
+<img src="https://imgur.com/jekkLW4.png" height="80%" width="80%" alt="iOS Packet Capture"/>
 <br />
 <br />
-Sanitization complete:  <br/>
-<img src="https://i.imgur.com/K71yaM2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Open wireshark and observe the interface "rvi0" has been added to capture network traffic:  <br/>
+<img src="https://imgur.com/6NB5z9l.png" height="80%" width="80%" alt="iOS Packet Capture"/>
 <br />
 <br />
-Observe the wiped disk:  <br/>
-<img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Click on the rvi0 interface to start packet capture as shown below:  <br/>
+<img src="https://imgur.com/qODeNr2.png" height="80%" width="80%" alt="iOS Packet Capture"/>
 </p>
 
 <!--
