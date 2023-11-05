@@ -23,7 +23,7 @@ Go to the app store and download Xcode: <br/>
 <img src="https://imgur.com/bVxbMpo.png" height="80%" width="80%" alt="iOS Packet Capture"/>
 <br />
 <br />
-Plug in the device with a usb and allow trust, open xcode and click on the windows menu > device and simulators > connected devices then copy the identifier(UDID):  <br/>
+Plug in the device with a usb and allow trust, open xcode and click on the windows menu > device and simulators > connected devices then copy the identifier(UDID). It is important to note that an hypen should be placed after the first 8 digits of the UDID to enable the remote virtual interface run the command in terminal:  <br/>
 <img src="https://imgur.com/u7c7U2I.png" height="80%" width="80%" alt="iOS Packet Capture"/>
 <br />
 <br />
