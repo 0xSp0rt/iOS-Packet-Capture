@@ -28,15 +28,15 @@ Plug in the device with a usb and allow trust, open xcode and click on the windo
 <br />
 <br />
 Open terminal and run the command "ifconfig -l" to check the preexisting network interfaces: <br/>
-<img src="https://imgur.com/atETaiH.png" height="80%" width="80%" alt="iOS Packet Capture"/>
+<img src="https://imgur.com/nO8SuBm.png" height="80%" width="80%" alt="iOS Packet Capture"/>
 <br />
 <br />
 Run the command "rvictl -s UDID", this allows us to create the network interface to analyze and capture the iOS device packets:  <br/>
-<img src="https://imgur.com/PeDA4QL.png" height="80%" width="80%" alt="iOS Packet Capture"/>
+<img src="https://imgur.com/Da1sHnP.png" height="80%" width="80%" alt="iOS Packet Capture"/>
 <br />
 <br />
 Run the command "ifconfig -l" to confirm the interface has been added, observe below that the interface "rvi0" has been added:  <br/>
-<img src="https://imgur.com/jekkLW4.png" height="80%" width="80%" alt="iOS Packet Capture"/>
+<img src="https://imgur.com/7QYmZLg.png" height="80%" width="80%" alt="iOS Packet Capture"/>
 <br />
 <br />
 Open wireshark and observe the interface "rvi0" has been added to capture network traffic:  <br/>
