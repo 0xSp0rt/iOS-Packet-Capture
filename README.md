@@ -40,7 +40,7 @@ Run the command "ifconfig -l" to confirm the interface has been added, observe b
 <br />
 <br />
 Open wireshark and observe the interface "rvi0" has been added to capture network traffic:  <br/>
-<img src="https://imgur.com/M8gr6sM" height="80%" width="80%" alt="iOS Packet Capture"/>
+<img src="https://imgur.com/M8gr6sM.png" height="80%" width="80%" alt="iOS Packet Capture"/>
 <br />
 <br />
 Click on the rvi0 interface to start packet capture as shown below:  <br/>
