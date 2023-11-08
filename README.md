@@ -20,7 +20,7 @@ This project provides a walkthrough on how to capture and analyze network traffi
 
 <p align="center">
 Go to the app store and download Xcode: <br/>
-<img src="https://imgur.com/bVxbMpo.png" height="80%" width="80%" alt="iOS Packet Capture"/>
+<img src="https://imgur.com/6vRgxJB.png" height="80%" width="80%" alt="iOS Packet Capture"/>
 <br />
 <br />
 Plug in the device with a usb and allow trust, open xcode and click on the windows menu > device and simulators > connected devices then copy the identifier(UDID). It is important to note that an hypen should be placed after the first 8 digits of the UDID to enable the remote virtual interface run the command in terminal:  <br/>
@@ -40,11 +40,11 @@ Run the command "ifconfig -l" to confirm the interface has been added, observe b
 <br />
 <br />
 Open wireshark and observe the interface "rvi0" has been added to capture network traffic:  <br/>
-<img src="https://imgur.com/6NB5z9l.png" height="80%" width="80%" alt="iOS Packet Capture"/>
+<img src="https://imgur.com/M8gr6sM" height="80%" width="80%" alt="iOS Packet Capture"/>
 <br />
 <br />
 Click on the rvi0 interface to start packet capture as shown below:  <br/>
-<img src="https://imgur.com/qODeNr2.png" height="80%" width="80%" alt="iOS Packet Capture"/>
+<img src="https://imgur.com/4496zNO.png" height="80%" width="80%" alt="iOS Packet Capture"/>
 </p>
 
 <!--
